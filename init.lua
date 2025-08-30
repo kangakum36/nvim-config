@@ -1,5 +1,11 @@
 local vim = vim
 
+-- disable netrw at the very start init.lua
+-- required by nvim-tree
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Enable filetype detection
 vim.cmd('filetype plugin indent on')
 
@@ -14,6 +20,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
 ]]
 
@@ -22,3 +29,4 @@ require('theme')
 require('opts')
 require('rust')
 require('completion')
+require('tree')
