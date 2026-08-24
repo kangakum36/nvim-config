@@ -1,10 +1,11 @@
 # Neovim Configuration
 
-Minimal Neovim setup focused on Rust development.
+Minimal Neovim setup focused on Rust and Python development.
 
 ## Features
 - Carbonfox theme
 - LSP with rust-analyzer
+- LSP with basedpyright (requires `basedpyright-langserver` on PATH — `npm install -g basedpyright`)
 - Completion via nvim-cmp
 - FZF and Telescope for fuzzy finding
 
